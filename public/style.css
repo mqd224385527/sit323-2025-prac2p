@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Zhi Mang Xing', cursive;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 2.5em;
+}
+
+#heartCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
