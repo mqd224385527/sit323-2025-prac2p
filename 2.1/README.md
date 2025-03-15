@@ -2,5 +2,5 @@
 
 ## 运行步骤
 1. 克隆仓库：
-   ```bash
+   
    git clone https://github.com/mqd224385527/sit323-2025-prac2p.git
