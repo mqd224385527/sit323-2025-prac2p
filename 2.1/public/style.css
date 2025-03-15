@@ -5,33 +5,77 @@
 }
 
 body {
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(135deg, #0033a0 30%, #d6001c 100%);
     min-height: 100vh;
-    overflow: hidden;
-    font-family: 'Zhi Mang Xing', cursive;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.logo-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
 }
 
-.container {
+.main-logo {
+    width: 100%;
+    height: auto;
     position: relative;
     z-index: 2;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+.decoration-circle {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120%;
+    height: 120%;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    animation: rotate 20s linear infinite;
+}
+
+.decoration-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 110%;
+    border: 3px dashed #ffd700;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 10px;
     text-align: center;
-    padding-top: 20%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 30px;
 }
 
 h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
-}
-
-p {
+    color: #0033a0;
+    margin-bottom: 10px;
     font-size: 2.5em;
 }
 
-#heartCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+h2 {
+    color: #d6001c;
+    margin-bottom: 15px;
+}
+
+.motto {
+    font-style: italic;
+    color: #666;
+    font-size: 1.2em;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
